@@ -78,9 +78,9 @@ public class Board {
         this.spots = new ArrayList<>();
 
         for(int i=0; i<size; i++) {
-            this.spots.add(String.valueOf(3*i));
-            this.spots.add(String.valueOf(3*i+1));
-            this.spots.add(String.valueOf(3*i+2));
+            for(int j=0; j<size; j++>) {
+                this.spots.add(String.valueOf(size * i + j));
+            }
         }
     }
 
@@ -591,6 +591,6 @@ public class WeatherTracker {
 > DIP 준수
  - `WeatherTracker`는 `notify(Notifier notifier)`에서 `Notifier` 추상화에 의존 -> DIP 준수
  - `EmailClient`나 `MobileDevice`와 같은 구현체에 의존 x
- 
+
 ## Reference
 - [SOLID](https://github.com/mikeknep/SOLID) by Mike Knepper
