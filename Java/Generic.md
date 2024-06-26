@@ -16,6 +16,33 @@
  - 여러 타입을 사용하는 대부분의 클래스나 메소드에서 인수나 반환값으로 Object 타입 사용
  - 제네릭 도입(JDK1.5) 이후 제네릭을 사용하면서 컴파일 시에 미리 타입이 정해지므로, 타입 검사나, 타입 변환과 같은 번거러운 작업 생략
 
+ #### 예제
+```java
+public class MyArray {
+
+    private  Object obj;
+
+    public Object getObj() {
+        return obj;
+    }
+
+    public void setObj(Object obj) {
+        this.obj = obj;
+    }
+}
+```
+
+```java
+public class MyArrayExample {
+    public static void main(String[] args) {
+        MyArray myArray = new MyArray();
+        myArray.setObj("hello");
+        String str = (String) myArray.getObj();
+    }
+}
+```
+
+
 ### 제네릭의 선언 및 생성
 #### 제네릭 선언
 ```java
