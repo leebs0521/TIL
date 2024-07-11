@@ -70,7 +70,7 @@ public int func(int[] arr, int N){
 ### 3. $O(\sqrt N)$
 ```java
 public int func(int N){
-    // 1, 4, 9..., sqrt(N)까지 반복하므로
+    // 1, 2, 3..., sqrt(N)까지 반복하므로
     for (int i=1; i*i <= N; i++>){
         if (i*i == N) return 1;
     }
