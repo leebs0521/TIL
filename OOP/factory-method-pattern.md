@@ -22,7 +22,7 @@
 
 ![factory-method-example](../images/factory-method-pattern.png)
 
-### 2.2 구체적인 인터페이스 정의
+### 2.2 문서 인터페이스 정의
 
 ```java
 // 문서 인터페이스 정의
@@ -65,7 +65,7 @@ class SpreadsheetDocument implements Document {
 }
 ```
 
-### 2.4 팩토리 메소드를 정의하는 추상 클래스
+### 2.4 팩토리 메소드를 포함하는 문서 어플리케이션 추상 클래스
 
 ```java
 abstract class Application {
@@ -87,7 +87,7 @@ abstract class Application {
 }
 ```
 
-### 2.5 구체적인 팩토리 클래스
+### 2.5 구체적인 문서 어플리케이션 클래스
 
 ```java
 class TextApplication extends Application {
