@@ -82,3 +82,7 @@ public class Main {
 - `getInstance` 정적 메소드를 통해 인스턴스에 접근 가능하다.
     - `volatile` 키워드를 통해 instance는 메인 메모리에 저장되어 CPU 캐시가 쓰이지 않는다. → 다중 스레드 환경에서 instance 변수의 값을 정확하게 읽고 쓸 수 있도록 보장
     - 또한, `첫번째 검사 - 동기화 블록 - 두번째 검사` 를 통해 다중 스레드 환경에서 안전하게 인스턴스를 생성한다. → 이중 검사 잠금(Double-Checked Locking)
+ 
+## Reference
+
+- https://refactoring.guru/
