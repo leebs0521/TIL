@@ -175,3 +175,10 @@ public interface CollectionUtils {
     - 인스턴스 필드와 생성자 지원
     - 추상 메서드와 구체적인 메서드(구현된 메서드)를 모두 포함할 수 있음
     - 상태를 가질 수 있으며, 자식 클래스에서 직접 상속받아 사용할 수 있음
+  
+## Reference
+
+- https://www.digitalocean.com/community/tutorials/java-8-interface-changes-static-method-default-method
+- https://javatechonline.com/static-methods-in-interface/
+- https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.4
+- [https://devbksheen.tistory.com/entry/디폴트-메서드default-method란](https://devbksheen.tistory.com/entry/%EB%94%94%ED%8F%B4%ED%8A%B8-%EB%A9%94%EC%84%9C%EB%93%9Cdefault-method%EB%9E%80)
