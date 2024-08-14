@@ -20,7 +20,7 @@
 
 - 웹에서 자원을 식별하고 위치를 지정하는 데 사용되는 문자열
 - 구성:
-    - [scheme]://[host]:[port]/[path]?[query]
+    - `[scheme]://[host]:[port]/[path]?[query]`
     - 예시 → http://kdt.programmers.com:8080/search?q=test&debug=true
         - **scheme**: http
         - **host**: kdt.programmers.com
